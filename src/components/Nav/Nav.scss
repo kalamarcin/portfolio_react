@@ -1,8 +1,16 @@
-@import '../../helpers/tokens'; 
-
+@import '../../helpers/tokens';
 
 .navbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
 	h1 {
 		font-size: 32px;
+		margin-right: auto;
+	}
+
+	a img {
+		margin-right: 2rem;
 	}
 }

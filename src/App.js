@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Hero from './components/Hero/Hero'
 import Nav from './components/Nav/Nav'
 
