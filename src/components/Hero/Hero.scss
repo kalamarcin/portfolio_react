@@ -1,6 +1,20 @@
 @import '../../helpers/tokens';
 
 .hero-box {
-    font-size: 88px;
-    margin-top: 198px;;
+	font-size: 48px;
+	margin-top: 198px;
+}
+
+span {
+	border-bottom: 5px solid $green;
+}
+
+.photo-box {
+    position: fixed;
+    right: 165px;
+    top: 0;
+	z-index: -1;
+	img {
+		height: 500px;
+	}
 }
