@@ -19,7 +19,7 @@ const Skills = () => {
 					</div>
 					<div className="cell">
 						<p>React</p>
-						<p>1 year experience</p>
+						<p>6 months experience</p>
 					</div>
 					<div className="cell">
 						<p>Sass</p>

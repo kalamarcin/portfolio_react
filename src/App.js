@@ -1,23 +1,19 @@
 import { Route, Routes } from 'react-router'
+//component
 import Contact from './view/Contact/Contact'
-import './App.scss'
-import Hero from './components/Hero/Hero'
 import Nav from './components/Nav/Nav'
-import Skills from './components/Skills/Skills'
+import Home from './components/Home/Home'
+//style
+import './App.scss'
 
 function App() {
 	return (
 		<>
-		
-       <Routes>
-            <Route path="/dashboard" component={Contact} />
+		<Nav />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path="/contact" element={<Contact />} />
 			</Routes>
-       
-       
-			<Nav />
-			<Hero />
-			<Skills />
-			
 		</>
 	)
 }

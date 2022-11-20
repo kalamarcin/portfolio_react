@@ -3,8 +3,8 @@
 .hero-box {
 	font-size: 48px;
 	margin-top: 130px;
-    padding-bottom: 5%;
-    border-bottom: 1px solid;
+	padding-bottom: 5%;
+	border-bottom: 1px solid;
 }
 
 span {
@@ -12,9 +12,9 @@ span {
 }
 
 .photo-box {
-    position: absolute;
-    right: 170px;
-    top: 0;
+	position: absolute;
+	right: 170px;
+	top: 0;
 	z-index: -1;
 	img {
 		height: 800px;
@@ -22,29 +22,34 @@ span {
 }
 
 .description {
-    
-    padding: 40px 0;
-    font-size: 18px ;
-    font-weight: medium;
-    width: min(100% - 40%);
-    p {
-        font-size: 18px;
-        color: $light-grey;
-        font-weight: 500;
-        line-height: 28px
-    }
+	padding: 40px 0;
+	font-size: 18px;
+	font-weight: medium;
+	width: min(100% - 40%);
+	p {
+		font-size: 18px;
+		color: $light-grey;
+		font-weight: 500;
+		line-height: 28px;
+	}
 }
 
 .description__contact__paragraf {
-    display: inline-block;
-    margin-top: 80px;
-    border-bottom: 3px solid $green;
-    padding-bottom: 10px;
-    a {
-        text-decoration: none;
-        color: $white;
-        font-size: 16px;
-        letter-spacing: 2.28571px;
-        
-    }
+	display: inline-block;
+	margin-top: 80px;
+	border-bottom: 3px solid $green;
+	padding-bottom: 10px;
+	button {
+		border: 0;
+		background: none;
+		text-decoration: none;
+		color: $white;
+		font-size: 16px;
+		letter-spacing: 2.28571px;
+		transition: color 0.3s;
+		cursor: pointer;
+		&:hover {
+			color: $green;
+		}
+	}
 }
