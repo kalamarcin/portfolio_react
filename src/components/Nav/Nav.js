@@ -20,8 +20,8 @@ const Nav = (props) => {
             <a href="https://www.linkedin.com/in/marcinkala" target='_blanck'><img src={linked} alt="" /></a>
             <a href="https://www.frontendmentor.io/profile/kalamarcin" target='_blanck'><img src={frontend} alt="" /></a>
             
-            <button onClick={() => handleClickLang('pl')}>PL</button>
             <button onClick={() => handleClickLang('en')}>EN</button>
+            <button onClick={() => handleClickLang('pl')}>PL</button>
 		</nav>
         </>
 	)

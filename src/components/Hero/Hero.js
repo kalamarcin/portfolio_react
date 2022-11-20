@@ -18,18 +18,18 @@ const Hero = () => {
 				<img src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
 			<div className="hero-box">
-				<h2>Nice to meet you!</h2>
+				<h2>{t('header.1')}</h2>
 				<h2>
-					I'm <span>Marcin Kala</span>.
+					{t('header.2')} <span>Marcin</span>.
 				</h2>
 				<div className="description">
 					<p className="description__p">
-						{t('header.1')}
+						{t('description.1')}
 					</p>
 
 					<div className="description__contact">
 						<p className="description__contact__paragraf">
-							<button onClick={goToContact}>CONTACT ME</button>
+							<button onClick={goToContact}>{t('contact')}</button>
 							
 						</p>
 					</div>

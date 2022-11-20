@@ -1,5 +1,13 @@
 {
     "header": {
-        "1": "Przez wiele lat pracowałem jako grafik komputerowy, tworząc identyfikację wizualną i DPT. Od najmłodszych lat tworzyłem proste strony HTML i CSS. Obecnie biore udział w kursie Software Development Academy. Program kurs to HTML, CSS (i SASS), JavaScript i React. Podczas kursu zapoznałem się z metodologią scrum, korzystałem z GIT i miałem okazję poznać najlepsze praktyki programistyczne. Uwielbiam uczyć się nowych rzeczy i poznawać nowe koncepcje. Potrafie skutecznie samodzielnie zarządzać projektami, a także współpracować w ramach zespołu"
-    }
+        "1": "Miło cię poznać!",
+        "2": "Mam na imię"
+    },
+
+    "description": {
+        "1": "Przez wiele lat pracowałem jako grafik komputerowy, tworząc identyfikację wizualną i DPT. Od najmłodszych lat tworzyłem proste strony HTML i CSS. Obecnie biore udział w kursie Software Development Academy. Program kurs to HTML, CSS (i SASS), JavaScript i React. Podczas kursu zapoznałem się z metodologią scrum, korzystałem z GIT i miałem okazję poznać najlepsze praktyki programistyczne. Uwielbiam uczyć się nowych rzeczy i poznawać nowe koncepcje. Potrafie skutecznie i samodzielnie zarządzać projektami, a także współpracować w ramach zespołu."
+    },
+    "contact": "SKONTAKTUJ SIĘ ZE MNĄ!"
+
+    
 }
