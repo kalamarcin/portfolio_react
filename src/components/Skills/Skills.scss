@@ -1,24 +1,23 @@
 @import '../../helpers/tokens';
 
 .skill-section {
-    margin-top: 100px;
-    p:nth-child(2) {
-        font-size: 18px;
-        font-weight: medium;
-        color: $light-grey;
-        line-height: 28px;
-    }
-}
+	margin-top: 100px;
+	p:nth-child(2) {
+		font-size: 18px;
+		font-weight: medium;
+		color: $light-grey;
+		line-height: 28px;
+	}
+	.skill-grid {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 8vw;
 
-.skill-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8vw;
-}
-
-.cell {
-	font-size: 48px;
+		.cell {
+			font-size: 48px;
+		}
+	}
 }
