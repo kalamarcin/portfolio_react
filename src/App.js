@@ -14,6 +14,10 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
+
+			<div className="footer">
+				<Nav title="marcinkala" />
+			</div>
 		</>
 	)
 }
