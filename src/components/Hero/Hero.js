@@ -1,10 +1,13 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 //style
 import './Hero.scss'
-import me from '../../assets/images/me4.jpg'
+import me from '../../assets/images/me.jpg'
+//translation
+import { useTranslation } from 'react-i18next';
 
 
 const Hero = () => {
+	const { t } = useTranslation();
 	const navigate = useNavigate()
 	const goToContact = () => {
 		navigate('/contact')
@@ -21,12 +24,7 @@ const Hero = () => {
 				</h2>
 				<div className="description">
 					<p className="description__p">
-						For many years I was working as a freelance graphic designer, creating visual identification and DPT. From
-						an early age, I created simple HTML and CSS websites. I am currently studying at the Software Development
-						Academy. The program of the course is HTML, CSS (and SASS), JavaScript and React. During the course I got
-						acquainted with the scrum methodology, I used GIT and I had the opportunity to learn the best programming
-						practices. I love learning new things and getting to know new concepts. Able to effectively self-manage
-						during independent projects, as well as collaborate as part of a productive team.
+						{t('header.1')}
 					</p>
 
 					<div className="description__contact">
