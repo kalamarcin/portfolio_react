@@ -9,6 +9,7 @@ import './App.scss'
 function App() {
 	return (
 		<>
+		
 			<Nav title="marcinkala" />
 			<Routes>
 				<Route path="/" element={<Home />} />

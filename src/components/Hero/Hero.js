@@ -14,6 +14,7 @@ const Hero = () => {
 	}
 	return (
 		<>
+		<div className="circle-1"></div>
 			<div className="photo-box">
 				<img src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
