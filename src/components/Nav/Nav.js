@@ -3,14 +3,20 @@ import github from '../../assets/images/icon-github.svg'
 import frontend from '../../assets/images/icon-frontend-mentor.svg'
 import linked from '../../assets/images/icon-linkedin.svg'
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 
 const Nav = (props) => {
-
+const [isActive, setIsActive] = useState(true)
     const { i18n } = useTranslation();
+    
     const handleClickLang = (lang) => {
         i18n.changeLanguage(lang);
-        
+        if (lang === "pl") {
+            setIsActive(false)
+        } if (lang === 'en')  {
+            setIsActive(true)
+        }
     }
 	return (
         <>
@@ -20,8 +26,8 @@ const Nav = (props) => {
             <a href="https://www.linkedin.com/in/marcinkala" target='_blanck'><img src={linked} alt="" /></a>
             <a href="https://www.frontendmentor.io/profile/kalamarcin" target='_blanck'><img src={frontend} alt="" /></a>
             
-            <button onClick={() => handleClickLang('en')}>EN</button>
-            <button onClick={() => handleClickLang('pl')}>PL</button>
+            <button className={isActive ? 'active' : 'disable' } onClick={() => handleClickLang('en')}>EN</button>
+            <button className={!isActive ? 'active' : 'disable'} onClick={() => handleClickLang('pl')}>PL</button>
 		</nav>
         </>
 	)

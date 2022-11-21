@@ -6,32 +6,41 @@
 	padding-bottom: 5%;
 
 	.project-grid {
-        margin-top: 80px;
+		margin-top: 80px;
 		display: grid;
 		justify-content: center;
-		
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 2vw;
 
 		.cell {
 			font-size: 48px;
-            margin-bottom: 50px;
-            h3 {
-                font-size: 24px;
-                line-height: 32px;
-                padding-bottom: 7px;
-                
-            }
-            p {
-                word-spacing: 20px;
-                color: $light-grey;
-                font-size: 18px;
-                line-height: 28px
-            }
+			margin-bottom: 50px;
+
+			.text-overflow {
+				padding: 5px;
+			}
+
+			h3 {
+				font-size: 24px;
+				line-height: 32px;
+				padding-bottom: 7px;
+			}
+			p {
+				word-spacing: 20px;
+				color: $light-grey;
+				font-size: 18px;
+				line-height: 28px;
+			}
+
+			.middle {
+				height: 500px;
+				background-image: url('../../assets/images/thumbnail-project-1-large.webp');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.middle-1 {
+			}
 		}
-        img {
-            width: 100%;
-        }
 	}
 }
