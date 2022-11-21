@@ -13,18 +13,76 @@ const Project = () => {
 		<div className="project-wrapper">
 			<h2>{t('project')}</h2>
 			<div className="project-grid">
-
 				<div className="cell">
-					
 					<div className="middle">
-						<div className="text">
-							<h3 className='text-overflow'>ghfj</h3>
+						<img src={project1} alt="" />
+						<div className="fragment">
+							<div className="text">
+								<a href="/" className="text__p">
+									VIEW PROJECT
+								</a>
+								<a href="/" className="text__p">
+									VIEW CODE
+								</a>
+							</div>
 						</div>
 					</div>
+					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
+					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+				</div>
 
-			
-					<h3>ORDER FORM WITH VALIDATION</h3>
-					<p>HTML CSS JAVASCRIPT</p>
+				<div className="cell">
+					<div className="middle">
+						<img src={project2} alt="" />
+						<div className="fragment">
+							<div className="text">
+								<a href="/" className="text__p">
+									VIEW PROJECT
+								</a>
+								<a href="/" className="text__p">
+									VIEW CODE
+								</a>
+							</div>
+						</div>
+					</div>
+					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
+					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+				</div>
+
+				<div className="cell">
+					<div className="middle">
+						<img src={project3} alt="" />
+						<div className="fragment">
+							<div className="text">
+								<a href="/" className="text__p">
+									VIEW PROJECT
+								</a>
+								<a href="/" className="text__p">
+									VIEW CODE
+								</a>
+							</div>
+						</div>
+					</div>
+					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
+					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+				</div>
+
+				<div className="cell">
+					<div className="middle">
+						<img src={project4} alt="" />
+						<div className="fragment">
+							<div className="text">
+								<a href="/" className="text__p">
+									VIEW PROJECT
+								</a>
+								<a href="/" className="text__p">
+									VIEW CODE
+								</a>
+							</div>
+						</div>
+					</div>
+					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
+					<p className="cell__p">HTML CSS JAVASCRIPT</p>
 				</div>
 			</div>
 		</div>
