@@ -8,7 +8,7 @@ import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
 
 //style
-import './App.scss'
+import styles from './App.module.scss'
 
 function App() {
 	const [ref, inView ] = useInView()
@@ -46,9 +46,9 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 
-			<div className="footer">
+			{/* <div className={styles.footer}>
 				<Nav title="marcinkala" />
-			</div>
+			</div> */}
 		</>
 	)
 }

@@ -5,7 +5,7 @@
 	font-size: 48px;
 	margin-top: 90px;
 	padding-bottom: 5%;
-	border-bottom: 1px solid;
+	
 	span {
 		border-bottom: 5px solid $green;
 	}
@@ -54,5 +54,17 @@
 		&:hover {
 			color: $green;
 		}
+		a {
+			text-decoration: none;
+			color: $white;
+			transition: 0.3s;
+			&:hover {
+				color: $green;
+			}
+		}
 	}
+}
+
+i {
+	margin-left: 10px;
 }

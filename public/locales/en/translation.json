@@ -7,7 +7,11 @@
     "description": {
         "1": "For many years I was working as a freelance graphic designer, creating visual identification and DPT. From an early age, I created simple HTML and CSS websites. I am currently studying at the Software Development Academy. The program of the course is HTML, CSS (and SASS), JavaScript and React. During the course I got acquainted with the scrum methodology, I used GIT and I had the opportunity to learn the best programming practices. I love learning new things and getting to know new concepts. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team."
     },
-    "contact": "CONTACT ME",
+    "buttons": {
+        "contact" : "CONTACT ME",
+        "download": "DOWNLOAD RESUME"
+    },
+    
 
     "exp": {
         "1": "month experience",

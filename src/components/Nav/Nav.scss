@@ -10,10 +10,15 @@
 		margin-right: auto;
 	}
 
-	a img {
-		margin-right: 2rem;
+	a {
+		
+		img {
+			margin-right: 2rem;
+			
+		}
+		
 	}
-
+	
 	a:last-of-type {
 		margin-right: 3rem;
 	}
@@ -32,7 +37,6 @@
 		margin-right: 0rem;
 		cursor: pointer;
 		transition: color 0.3s;
-		
 	}
 	.disable {
 		border: 0;

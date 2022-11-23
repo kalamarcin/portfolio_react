@@ -1,0 +1,61 @@
+@import '../../helpers/tokens';
+
+.body-section {
+	height: 100%px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.form-section-grid {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5vw;
+		background-color: rgba($color: black, $alpha: 0.4);
+		border-radius: 25px;
+
+		.cell-form {
+			margin: 10px 150px;
+      display: flex;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+			form {
+				display: flex;
+				height: 600px;
+        width: 400px;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+        
+        input {
+          width: 100%;
+          font-size: 16px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          background: none;
+          border: none;
+          border-bottom: 1px solid $white;
+        }
+        textarea {
+          background: none;
+          border: none;
+          font-size: 16px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          width: 100%;
+        }
+        .submit {
+          display: flex;
+          
+          
+          justify-content: flex-start;
+          
+        }
+			}
+		}
+	}
+}

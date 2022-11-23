@@ -3,19 +3,16 @@ import { useNavigate } from 'react-router-dom'
 import './Hero.scss'
 import me from '../../assets/images/me.jpg'
 //translation
-import { useTranslation } from 'react-i18next';
-
-
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 	const navigate = useNavigate()
 	const goToContact = () => {
 		navigate('/contact')
 	}
 	return (
 		<>
-		
 			<div className="photo-box">
 				<img src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
@@ -25,20 +22,19 @@ const Hero = () => {
 					{t('header.2')} <span>Marcin</span>.
 				</h2>
 				<div className="description">
-					<p className="description__p">
-						{t('description.1')}
-					</p>
+					<p className="description__p">{t('description.1')}</p>
 
 					<div className="description__contact">
 						<p className="description__contact__paragraf">
-							
-							<button onClick={goToContact}>{t('contact')}</button>
-							
+							<button onClick={goToContact}>
+								{t('buttons.contact')} <i class="fa-sharp fa-solid fa-address-card"></i>
+							</button>
 						</p>
 						<p className="description__contact__paragraf">
-							
-							<button onClick={goToContact}>{t('contact')}</button>
-							
+							<button><a href="../../assets/files/MarcinKalaResume.pdf" download>
+								{t('buttons.download')}
+								<i class="fa-sharp fa-solid fa-circle-down"></i></a>
+							</button>
 						</p>
 					</div>
 				</div>

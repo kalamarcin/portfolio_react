@@ -1,0 +1,32 @@
+@import './helpers/_tokens.scss';
+
+* {
+  font-family: "Space Grotesk";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0,0,0);
+background: linear-gradient(169deg, rgba(0,0,0,1) 19%, rgba(7,25,42,1) 42%, rgba(10,36,55,1) 67%, rgba(0,8,18,1) 100%);
+  color: $white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 39px 165px;
+  background-repeat: no-repeat;
+  height: 100%;
+  
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid white;
+  padding-top: 30px;
+  position: relative;
+  bottom: 0;
+}
+
+
+  
