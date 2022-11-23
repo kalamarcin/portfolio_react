@@ -8,8 +8,11 @@
 }
 
 body {
-  background: rgb(0,0,0);
-background: linear-gradient(169deg, rgba(0,0,0,1) 19%, rgba(7,25,42,1) 42%, rgba(10,36,55,1) 67%, rgba(0,8,18,1) 100%);
+  background: url('./assets/images/peakpx.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: $white;
   background-position: center;
   background-repeat: no-repeat;
