@@ -4,7 +4,7 @@ import './Hero.scss'
 import me from '../../assets/images/me.jpg'
 //translation
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+
 
 
 const Hero = () => {
