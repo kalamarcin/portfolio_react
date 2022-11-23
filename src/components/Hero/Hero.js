@@ -4,6 +4,7 @@ import './Hero.scss'
 import me from '../../assets/images/me.jpg'
 //translation
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
 	}
 	return (
 		<>
-		<div className="circle-1"></div>
+		
 			<div className="photo-box">
 				<img src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
@@ -30,6 +31,12 @@ const Hero = () => {
 
 					<div className="description__contact">
 						<p className="description__contact__paragraf">
+							
+							<button onClick={goToContact}>{t('contact')}</button>
+							
+						</p>
+						<p className="description__contact__paragraf">
+							
 							<button onClick={goToContact}>{t('contact')}</button>
 							
 						</p>

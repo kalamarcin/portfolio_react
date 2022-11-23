@@ -1,4 +1,9 @@
 import { useTranslation } from 'react-i18next'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from 'framer-motion'
+import  ScrollUpButton from 'react-scroll-up-button'
+
 // style
 import './Project.scss'
 // img
@@ -9,11 +14,44 @@ import project4 from '../../assets/images/thumbnail-project-4-large.webp'
 
 const Project = () => {
 	const { t } = useTranslation()
+	const control = useAnimation()
+	const control1 = useAnimation()
+	const [ref, inView] = useInView()
+	const [ref1, inView1] = useInView()
+
+	const boxVariant = {
+		visible: {
+			y: -10,
+			opacity: 1,
+			transition: { duration: 1 },
+		},
+		hidden: {
+			y: 100,
+			opacity: 0,
+		},
+	}
+
+	useEffect(() => {
+		if (inView) {
+			control.start('visible')
+		} else {
+			control.start('hidden')
+		}
+	}, [control, inView])
+
+	useEffect(() => {
+		if (inView1) {
+			control1.start('visible')
+		} else {
+			control1.start('hidden')
+		}
+	}, [control1, inView1])
+
 	return (
 		<div className="project-wrapper">
 			<h2>{t('project')}</h2>
 			<div className="project-grid">
-				<div className="cell">
+				<motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className="cell">
 					<div className="middle">
 						<img src={project1} alt="" />
 						<div className="fragment">
@@ -29,9 +67,9 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
-				</div>
+				</motion.div>
 
-				<div className="cell">
+				<motion.div variants={boxVariant} initial="hidden" animate={control} className="cell">
 					<div className="middle">
 						<img src={project2} alt="" />
 						<div className="fragment">
@@ -47,9 +85,9 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
-				</div>
+				</motion.div>
 
-				<div className="cell">
+				<motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
 					<div className="middle">
 						<img src={project3} alt="" />
 						<div className="fragment">
@@ -65,9 +103,8 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
-				</div>
-
-				<div className="cell">
+				</motion.div>
+				<motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
 					<div className="middle">
 						<img src={project4} alt="" />
 						<div className="fragment">
@@ -83,7 +120,13 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
-				</div>
+				</motion.div>
+
+				
+        <ScrollUpButton className='class'
+          />
+					 
+					
 			</div>
 		</div>
 	)

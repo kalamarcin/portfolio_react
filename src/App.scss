@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: $black;
+  background-image: linear-gradient(to bottom, #000000, #0e090d, #211e32, #151f2b, #0c0f13);
+  background-repeat: none;
   color: white;
   margin: 39px 165px;
 }
