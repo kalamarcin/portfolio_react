@@ -123,8 +123,7 @@ const Project = () => {
 				</motion.div>
 
 				
-        <ScrollUpButton className='class'
-          />
+      
 					 
 					
 			</div>
