@@ -8,7 +8,7 @@ import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
 
 //style
-import styles from './App.module.scss'
+
 
 function App() {
 	const [ref, inView ] = useInView()
