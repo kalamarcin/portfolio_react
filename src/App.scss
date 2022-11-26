@@ -8,20 +8,11 @@
 }
 
 body {
-	height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    background-repeat:no-repeat;
-    background: -webkit-linear-gradient( to left top, blue, red);
-    background: -moz-linear-gradient( to left top, blue, red);
-    background: -ms-linear-gradient( to left top, blue, red);
-    background: -o-linear-gradient( to left top, blue, red);
-    background: linear-gradient( to left top, blue, red);
-	background: rgb(0, 0, 0);
 	
+	background-image: linear-gradient(to bottom, #000000, #11050b, #190b17, #1b1122, #19172f, #19172f, #19172f, #19172f, #1b1122, #190b17, #11050b, #000000);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	color: $white;
 	margin: 39px 165px;
 	

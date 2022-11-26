@@ -2,8 +2,6 @@ import { useTranslation } from 'react-i18next'
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
-
-
 // style
 import './Project.scss'
 // img

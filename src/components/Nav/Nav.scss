@@ -2,7 +2,7 @@
 
 .navbar {
 	display: flex;
-	justify-content: flex-end;
+
 	align-items: center;
 
 	h1 {
@@ -16,14 +16,11 @@
 	}
 
 	a {
-		
 		img {
 			margin-right: 2rem;
-			
 		}
-		
 	}
-	
+
 	a:last-of-type {
 		margin-right: 3rem;
 	}
