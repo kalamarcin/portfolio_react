@@ -6,58 +6,50 @@ import { useInView } from 'react-intersection-observer'
 import Contact from './view/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
-import Login from './view/Login/Login'
 import GlobalStore from './components/Store/GlobalStore'
 
 //style
 import './App.scss'
 
 function App() {
-
-	const [ref, inView ] = useInView()
+	const [ref, inView] = useInView()
 	const control = useAnimation()
 	const boxVariant = {
-		visible: { 
-			y:0,
-			opacity: 1 ,
-			transition: { duration: 0.6 } 
+		visible: {
+			y: 0,
+			opacity: 1,
+			transition: { duration: 0.6 },
 		},
-		hidden: { 
+		hidden: {
 			y: -50,
-			opacity: 0,  
+			opacity: 0,
 		},
-		
 	}
 	useEffect(() => {
 		if (inView) {
-		  control.start("visible");
+			control.start('visible')
 		} else {
-		  control.start("hidden");
+			control.start('hidden')
 		}
-	  }, [control, inView]);
+	}, [control, inView])
 	return (
 		<GlobalStore>
-		<>
-		<div className="bg"></div>
-			<motion.div
-			ref={ref}
-			variants={boxVariant} 
-			initial="visible" 
-			animate={control} 
-			><Nav title="marcinkala" /></motion.div>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
+			<>
+				<div className="bg"></div>
+				<motion.div ref={ref} variants={boxVariant} initial="visible" animate={control}>
+					<Nav title="marcinkala" />
+				</motion.div>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
 
-			{/* <div className={styles.footer}>
+				{/* <div className={styles.footer}>
 				<Nav title="marcinkala" />
 			</div> */}
-			
-		</>
+			</>
 		</GlobalStore>
 	)
 }
 
 export default App
- 

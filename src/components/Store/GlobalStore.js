@@ -6,7 +6,7 @@ export const GlobalStoreContext = createContext({
 })
 
 const GlobalStore = props => {
-	const [userCanLog, setUserCanLog] = useState(['ania', 'dmytro', 'gosia', 'marcin', 'michał', 'ola'])
+	const [userCanLog] = useState(['ania', 'dmytro', 'gosia', 'marcin', 'michał', 'ola'])
 	const [isLog, setIsLog] = useState(false)
 	const handleCheckUser = value => value ? setIsLog(true) : setIsLog(false)
    
