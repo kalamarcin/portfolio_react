@@ -1,60 +1,80 @@
 @import '../../helpers/tokens';
 
 .body-section {
-	margin-top: 250px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.btn-home {
+		margin-top: 80px;
+		padding-right: 25px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: flex-end;
+		height: 50px;
+		color: white;
+		background: none;
+		border: 0;
+		text-decoration: none;
+		cursor: pointer;
+		transition: color 0.3s;
+		&:hover {
+			color: $green;
+		}
+	}
 
 	.form-section-grid {
+		margin-top: 80px;
 		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 5vw;
-		background-color: rgba($color: black, $alpha: 0.3);
+		grid-column-gap: 3rem;
+		background-color: rgba($color: rgb(69, 69, 69), $alpha: 0.3);
 		border-radius: 25px;
 
 		.cell-form {
-			margin: 10px 150px;
-      display: flex;
-      height: 500px;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      
+			.text-content {
+				margin: 80px;
+			}
+
 			form {
+				margin: 50px 50px;
 				display: flex;
-				height: 600px;
-        width: 400px;
-				justify-content: center;
-				align-items: center;
 				flex-direction: column;
-        
-        input {
-          width: 100%;
-          font-size: 16px;
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-          background: none;
-          border: none;
-          border-bottom: 1px solid $white;
-        }
-        textarea {
-          background: none;
-          border: none;
-          font-size: 16px;
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-          width: 100%;
-        }
-        .submit {
-          display: flex;
-          
-          
-          justify-content: flex-start;
-          
-        }
+
+				input {
+					width: 100%;
+					padding: 15px;
+					width: 100%;
+					color: white;
+					margin-bottom: 50px;
+					font-size: 16px;
+					background: none;
+					border: none;
+					border-bottom: 1px solid $white;
+					outline: none;
+				}
+				textarea {
+					padding: 15px;
+					color: white;
+					border-bottom: 1px solid white;
+					background: none;
+					border: none;
+					font-size: 16px;
+					resize: none;
+					bottom: none;
+					outline: none;
+					border-bottom: 1px solid white;
+				}
+			}
+			.submit {
+				margin-top: 50px;
+				display: flex;
+				width: 100%;
+				padding-top: 20px;
+				display: flex;
+				background: none;
+				border: none;
+				color: white;
+				justify-content: flex-end;
+				align-self: flex-end;
 			}
 		}
 	}

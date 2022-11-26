@@ -27,13 +27,13 @@ const Hero = () => {
 					<div className="description__contact">
 						<p className="description__contact__paragraf">
 							<button onClick={goToContact}>
-								{t('buttons.contact')} <i class="fa-sharp fa-solid fa-address-card"></i>
+								{t('buttons.contact')} <i className="fa-sharp fa-solid fa-address-card"></i>
 							</button>
 						</p>
 						<p className="description__contact__paragraf">
 							<button><a href="../../assets/files/MarcinKalaResume.pdf" download>
 								{t('buttons.download')}
-								<i class="fa-sharp fa-solid fa-circle-down"></i></a>
+								<i className="fa-sharp fa-solid fa-circle-down"></i></a>
 							</button>
 						</p>
 					</div>

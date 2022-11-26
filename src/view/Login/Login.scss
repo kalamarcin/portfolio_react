@@ -1,0 +1,14 @@
+.section-login {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        margin-bottom: 50px;
+    }
+    button {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+}

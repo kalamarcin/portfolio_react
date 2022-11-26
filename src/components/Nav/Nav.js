@@ -4,9 +4,14 @@ import frontend from '../../assets/images/icon-frontend-mentor.svg'
 import linked from '../../assets/images/icon-linkedin.svg'
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 
 
 const Nav = (props) => {
+    const navigate = useNavigate()
+    const goToHome = () => {
+		navigate('/')
+	}
 const [isActive, setIsActive] = useState(true)
     const { i18n } = useTranslation();
     
@@ -21,7 +26,7 @@ const [isActive, setIsActive] = useState(true)
 	return (
         <>
 		<nav className="navbar">
-			<h1>{props.title}</h1>
+			<h1 onClick={goToHome}>{props.title}</h1>
             <a href="https://github.com/kalamarcin" target='_blanck'><img src={github} alt="" /></a>
             <a href="https://www.linkedin.com/in/marcinkala" target='_blanck'><img src={linked} alt="" /></a>
             <a href="https://www.frontendmentor.io/profile/kalamarcin" target='_blanck'><img src={frontend} alt="" /></a>

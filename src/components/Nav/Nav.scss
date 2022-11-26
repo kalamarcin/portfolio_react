@@ -8,6 +8,11 @@
 	h1 {
 		font-size: 32px;
 		margin-right: auto;
+		cursor: pointer;
+		transition: color 0.3s;
+		&:hover {
+			color: $green;
+		}
 	}
 
 	a {

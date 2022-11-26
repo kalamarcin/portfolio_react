@@ -6,11 +6,14 @@ import { useInView } from 'react-intersection-observer'
 import Contact from './view/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
+import Login from './view/Login/Login'
+import GlobalStore from './components/Store/GlobalStore'
 
 //style
 import './App.scss'
 
 function App() {
+
 	const [ref, inView ] = useInView()
 	const control = useAnimation()
 	const boxVariant = {
@@ -33,8 +36,9 @@ function App() {
 		}
 	  }, [control, inView]);
 	return (
-		
+		<GlobalStore>
 		<>
+		<div className="bg"></div>
 			<motion.div
 			ref={ref}
 			variants={boxVariant} 
@@ -49,7 +53,9 @@ function App() {
 			{/* <div className={styles.footer}>
 				<Nav title="marcinkala" />
 			</div> */}
+			
 		</>
+		</GlobalStore>
 	)
 }
 
