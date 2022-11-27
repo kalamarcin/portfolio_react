@@ -17,7 +17,7 @@ const Contact = () => {
 	const goToHome = () => {
 		navigate('/')
 	}
-	const notify = () =>
+const notifySend = () =>
 		toast.success('Wysłane!', {
 			theme: 'light',
 			position: toast.POSITION.TOP_CENTER,
@@ -26,7 +26,9 @@ const Contact = () => {
 			pauseOnFocusLoss: false,
 		})
 
-const {register, handleSubmit, formState: {errors}} = useForm({
+
+
+const {register, reset,  handleSubmit, formState: {errors}} = useForm({
 	resolver: yupResolver(userSchema),
 })
 
@@ -41,8 +43,13 @@ const {register, handleSubmit, formState: {errors}} = useForm({
 		// 	}
 		// )
 		
-		notify()
+		notifySend()
+		reset()
+	
 	}
+
+	
+	
 	
 	return (
 		<>
@@ -65,12 +72,16 @@ const {register, handleSubmit, formState: {errors}} = useForm({
 					<div className="cell-form">
 						<form ref={form} onSubmit={handleSubmit(sendEmail)}>
 							
-							<input className={errors.name ? 'error_input' : 'normal_input'} type="text" name="user_name" placeholder="NAME" {...register('name')}  />
-							<p className='error_info'>{errors.name?.message}</p>
-							<input className={errors.email ? 'error_input' : 'normal_input'} type="email" name="user_email" placeholder="EMAIL" {...register('email')}/>
-							<textarea className={errors.message ? 'error_textarea' : 'normal_textarea'} name="message" placeholder="MESSAGE" rows={5} {...register('message')}/>
+							<input className={errors.name ? 'error_input' : 'normal_input'} type="text" name="name" placeholder="NAME" {...register('name')}  />
+							{errors.name ? <p className='error_info'>{errors.name.message}</p> : '' }
+
+							<input className={errors.email ? 'error_input' : 'normal_input'} type="email" name="email" placeholder="EMAIL" {...register('email')}/>
+							{errors.email ? <p className='error_info'>{errors.email.message}</p> : '' }
+
+							<textarea className={errors.message? 'error_textarea' : 'normal_textarea'} name="message" placeholder="MESSAGE" rows={5} {...register('message')}/>
+							{errors.message ? <p className='error_info_text'>{errors.message.message}</p> : '' }
 							
-							<button className="submit" type="submit" value="Send">
+							<button className="submit" type="submit" value="Send"  >
 								SEND MESSAGE
 							</button>
 						</form>

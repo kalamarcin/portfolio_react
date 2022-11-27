@@ -5,7 +5,7 @@ import me from '../../assets/images/me.jpg'
 //translation
 import { useTranslation } from 'react-i18next'
 
-const Hero = () => {
+const Hero = (props) => {
 	const { t } = useTranslation()
 	const navigate = useNavigate()
 	const goToContact = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
 			<div className="hero-box">
 				<h2>{t('header.1')}</h2>
 				<h2>
-					{t('header.2')} <span>Marcin</span>.
+					{t('header.2')} <span>{props.name}</span>.
 				</h2>
 				<div className="description">
 					<p className="description__p">{t('description.1')}</p>
@@ -31,7 +31,7 @@ const Hero = () => {
 							</button>
 						</p>
 						<p className="description__contact__paragraf">
-							<button><a href="../../assets/files/MarcinKalaResume.pdf" download>
+							<button><a href={props.link} download>
 								{t('buttons.download')}
 								<i className="fa-sharp fa-solid fa-circle-down"></i></a>
 							</button>
