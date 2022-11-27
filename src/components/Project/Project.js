@@ -119,11 +119,6 @@ const Project = () => {
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
 				</motion.div>
-
-				
-      
-					 
-					
 			</div>
 		</div>
 	)
