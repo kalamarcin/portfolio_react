@@ -34,14 +34,14 @@ const {register, reset,  handleSubmit, formState: {errors}} = useForm({
 
 	const sendEmail = () => {
 		
-		// emailjs.sendForm('service_xyxbpt9', 'template_hprltkm', form.current, 'FhcVn6Mg6nE0z72o-').then(
-		// 	result => {
-		// 		console.log(result.text)
-		// 	},
-		// 	error => {
-		// 		console.log(error.text)
-		// 	}
-		// )
+		emailjs.sendForm('service_xyxbpt9', 'template_hprltkm', form.current, 'FhcVn6Mg6nE0z72o-').then(
+			result => {
+				console.log(result.text)
+			},
+			error => {
+				console.log(error.text)
+			}
+		)
 		
 		notifySend()
 		reset()
