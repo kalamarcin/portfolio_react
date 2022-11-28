@@ -68,16 +68,24 @@ const Project = () => {
 						<div className="fragment">
 							<div className="text">
 								<a href="/" className="text__p">
-									VIEW PROJECT
+								<p>	VIEW PROJECT</p>
 								</a>
 								<a href="/" className="text__p">
-									VIEW CODE
+								<p>	VIEW CODE</p>
 								</a>
 							</div>
 						</div>
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+					<div className="hidden-box">
+						<a href="/" className="hidden-txt">
+							VIEW PROJECT
+						</a>
+						<a href="/" className="hidden-txt">
+							VIEW CODE
+						</a>
+					</div>
 				</motion.div>
 
 				<motion.div variants={boxVariant} initial="hidden" animate={control} className="cell">
@@ -96,6 +104,14 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+					<div className="hidden-box">
+						<a href="/" className="hidden-txt">
+							VIEW PROJECT
+						</a>
+						<a href="/" className="hidden-txt">
+							VIEW CODE
+						</a>
+					</div>
 				</motion.div>
 
 				<motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
@@ -114,6 +130,14 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+					<div className="hidden-box">
+						<a href="/" className="hidden-txt">
+							VIEW PROJECT
+						</a>
+						<a href="/" className="hidden-txt">
+							VIEW CODE
+						</a>
+					</div>
 				</motion.div>
 				<motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
 					<div className="middle">
@@ -131,6 +155,14 @@ const Project = () => {
 					</div>
 					<h3 className="cell__h3">ORDER FORM WITH VALIDATION</h3>
 					<p className="cell__p">HTML CSS JAVASCRIPT</p>
+					<div className="hidden-box">
+						<a href="/" className="hidden-txt">
+							VIEW PROJECT
+						</a>
+						<a href="/" className="hidden-txt">
+							VIEW CODE
+						</a>
+					</div>
 				</motion.div>
 			</div>
 		</div>
