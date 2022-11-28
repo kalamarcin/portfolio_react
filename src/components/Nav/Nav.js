@@ -29,7 +29,7 @@ const [isActive, setIsActive] = useState(true)
 			<h1 onClick={goToHome}>{props.title}</h1>
             <div className="social">
             <a href="https://github.com/kalamarcin" target='_blanck'><img src={github} alt="" /></a>
-            <a href="https://www.linkedin.com/in/marcinkala" target='_blanck'><img src={linked} alt="" /></a>
+            <a href="linked:www.linkedin.com/in/marcinkala" target='_blanck'><img src={linked} alt="" /></a>
             <a href="https://www.frontendmentor.io/profile/kalamarcin" target='_blanck'><img src={frontend} alt="" /></a>
             
             <div className="btns">
