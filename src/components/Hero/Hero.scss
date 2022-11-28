@@ -72,7 +72,72 @@
 i {
 	margin-left: 10px;
 }
-
+@media all and (max-width: 1000px) {
+	.photo-box {
+	
+		position: absolute;
+		right: 20px;
+		top: 0;
+		z-index: -1;
+		.web-img {
+			height: 800px;
+		}
+		.mob-img {
+			display: none;
+		}
+	}
+	.description {
+		padding: 40px 0;
+		font-size: 18px;
+		font-weight: medium;
+		width: 500px;
+		p {
+			font-size: 18px;
+			color: $light-grey;
+			font-weight: 500;
+			line-height: 28px;
+		}
+	}
+	.description__contact {
+		display: inline;
+		margin: 0;
+	}
+	.description__contact__paragraf {
+		
+	margin-top: 80px;
+	border-bottom: 3px solid $green;
+	padding-bottom: 10px;
+	
+	&:last-child {
+		margin-left: 20px;
+	}
+		
+		
+		button {
+			border: 0;
+			background: none;
+			text-decoration: none;
+			color: $white;
+			font-size: 16px;
+			letter-spacing: 2px;
+			transition: color 0.3s;
+			
+			
+			cursor: pointer;
+			&:hover {
+				color: $green;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+				transition: 0.3s;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+}
+}
 @media all and (max-width: 500px), (max-height: 390px) {
 	.hero-box {
 		display: flex;
@@ -161,3 +226,4 @@ i {
 	
 	
 }
+

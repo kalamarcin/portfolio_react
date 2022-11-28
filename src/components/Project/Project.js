@@ -28,12 +28,14 @@ const Project = () => {
 			opacity: 0,
 		},
 	}
-	const isMobile = window.innerWidth || window.innerHeight < 500
+	const isMobile = window.innerWidth <= 500
+
 	if (isMobile) {
 		boxVariant = {
 			visible: {
 				y: -10,
 				opacity: 1,
+				transition: { duration: 0 },
 			},
 			hidden: {
 				y: -10,

@@ -6,17 +6,29 @@ import memob from '../../assets/images/me_mob.png'
 //translation
 import { useTranslation } from 'react-i18next'
 
-const Hero = (props) => {
+const Hero = props => {
 	const { t } = useTranslation()
 	const navigate = useNavigate()
 	const goToContact = () => {
 		navigate('/contact')
 	}
+
+	const onButtonClick = () => {
+		fetch('MarcinKalaResume.pdf').then(response => {
+			response.blob().then(blob => {
+				const fileURL = window.URL.createObjectURL(blob)
+				let alink = document.createElement('a')
+				alink.href = fileURL
+				alink.download = 'MarcinKalaResume.pdf'
+				alink.click()
+			})
+		})
+	}
 	return (
 		<>
 			<div className="photo-box">
-				<img className='web-img' src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
-				<img className='mob-img' src={memob} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
+				<img className="web-img" src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
+				<img className="mob-img" src={memob} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
 			<div className="hero-box">
 				<h2>{t('header.1')}</h2>
@@ -33,9 +45,9 @@ const Hero = (props) => {
 							</button>
 						</p>
 						<p className="description__contact__paragraf">
-							<button><a href={props.link} download>
+							<button onClick={onButtonClick}>
 								{t('buttons.download')}
-								<i className="fa-sharp fa-solid fa-circle-down"></i></a>
+								<i className="fa-sharp fa-solid fa-circle-down"></i>
 							</button>
 						</p>
 					</div>

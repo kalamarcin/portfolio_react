@@ -26,6 +26,20 @@
 		}
 	}
 }
+@media all and (max-width: 1000px) {
+	.skill-section {
+		.skill-grid {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr ;
+			grid-gap: 6vw;
+		}
+	}
+	
+}
 @media all and (max-width: 500px), (max-height: 390px) {
 	.skill-section {
 		padding: 50px;
@@ -55,3 +69,4 @@
 		}
 	}
 }
+

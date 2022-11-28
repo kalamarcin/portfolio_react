@@ -42,7 +42,7 @@ const Home = () => {
 
 	return (
 		<>
-			<Hero link="../../assets/files/MarcinKalaResume.pdf" name="Marcin" />
+			<Hero name="Marcin" />
 			<Skills skills={skillsList} />
 			<Project />
 		</>

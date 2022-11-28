@@ -16,8 +16,13 @@ body {
 	
 	
 }
-
-@media all and (max-width: 500px), (max-height: 500) {
+@media all and (max-width: 1000px) {
+	body {
+		margin: 2rem 2rem;
+		height: auto;
+	}
+}
+@media all and (max-width: 600px), (max-height: 500px) {
 	body {
 		margin: 2rem 2rem;
 		height: auto;
