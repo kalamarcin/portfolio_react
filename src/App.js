@@ -6,15 +6,14 @@ import { useInView } from 'react-intersection-observer'
 import Contact from './view/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
-import { GlobalStoreContext } from './components/Store/GlobalStore'
-import { useContext } from 'react'
+
 
 
 //style
 import './App.scss'
 
 function App() {
-	const GlobalStore = useContext(GlobalStoreContext)
+	
 	const [ref, inView] = useInView()
 	const control = useAnimation()
 	const boxVariant = {
