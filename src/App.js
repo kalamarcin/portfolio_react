@@ -6,12 +6,15 @@ import { useInView } from 'react-intersection-observer'
 import Contact from './view/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Home from './view/Home/Home'
-import GlobalStore from './components/Store/GlobalStore'
+import { GlobalStoreContext } from './components/Store/GlobalStore'
+import { useContext } from 'react'
+
 
 //style
 import './App.scss'
 
 function App() {
+	const GlobalStore = useContext(GlobalStoreContext)
 	const [ref, inView] = useInView()
 	const control = useAnimation()
 	const boxVariant = {
@@ -33,9 +36,9 @@ function App() {
 		}
 	}, [control, inView])
 	return (
-		<GlobalStore>
-			<>
-				<div className="bg"></div>
+		<>
+			
+				
 				<motion.div ref={ref} variants={boxVariant} initial="visible" animate={control}>
 					<Nav title="marcinkala" />
 				</motion.div>
@@ -43,12 +46,9 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
-
-				{/* <div className={styles.footer}>
-				<Nav title="marcinkala" />
-			</div> */}
+				
+			
 			</>
-		</GlobalStore>
 	)
 }
 

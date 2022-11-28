@@ -2,9 +2,23 @@
 
 .navbar {
 	display: flex;
-
 	align-items: center;
 
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			img {
+				margin-right: 2rem;
+				transition: filter 0.3s;
+				&:hover {
+					filter: brightness(0) saturate(100%) invert(66%) sepia(4%) saturate(4714%) hue-rotate(101deg) brightness(111%)
+						contrast(101%);
+				}
+			}
+		}
+	}
 	h1 {
 		font-size: 32px;
 		margin-right: auto;
@@ -15,21 +29,13 @@
 		}
 	}
 
-	a {
-		img {
-			margin-right: 2rem;
-		}
-	}
+	
 
 	a:last-of-type {
 		margin-right: 3rem;
 	}
 
-	p {
-		font-size: 16px;
-		font-weight: 100;
-		margin-right: 1rem;
-	}
+	
 	.active {
 		border: 0;
 		margin: 1rem;
@@ -51,6 +57,51 @@
 		transition: color 0.4s;
 		&:hover {
 			color: $green;
+		}
+	}
+}
+
+@media all and (max-width: 500px) {
+	 
+	.navbar {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		h1 {
+			margin: 0;
+			display: flex;
+			height: 50px;
+			justify-content: center;
+			
+		}
+		a {
+			display: flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			img{
+				margin: 5px 10px;
+				padding: 0;
+			}
+		}
+		a:last-of-type {
+			margin-right: 50px;
+		}
+		.social {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 100%;
+		}
+		
+		
+		.btns {
+			display: flex;
+			height: 40px;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
 		}
 	}
 }

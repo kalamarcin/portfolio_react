@@ -12,12 +12,16 @@
 }
 
 .photo-box {
+	
 	position: absolute;
 	right: 170px;
 	top: 0;
 	z-index: -1;
-	img {
+	.web-img {
 		height: 800px;
+	}
+	.mob-img {
+		display: none;
 	}
 }
 
@@ -40,7 +44,7 @@
 	border-bottom: 3px solid $green;
 	padding-bottom: 10px;
 	&:last-child {
-		margin-left: 50px;
+		margin-left: 60px;
 	}
 	button {
 		border: 0;
@@ -67,4 +71,93 @@
 
 i {
 	margin-left: 10px;
+}
+
+@media all and (max-width: 500px), (max-height: 390px) {
+	.hero-box {
+		display: flex;
+		margin: 0;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		h2 {
+			font-size: 38px;
+		}
+		span {
+			border-bottom: 5px solid $green;
+		}
+	}
+	
+	.photo-box {
+		position:unset;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		
+		.web-img {
+			display: none;
+		}
+		.mob-img {
+			display: flex;
+			margin: 25px 0;
+			height: 250px;
+		}
+	}
+	
+	.description {
+		padding: 40px 0;
+		width: 100%;
+		
+		text-align: center;
+		p {
+			font-size: 14px;
+			color: $light-grey;
+			font-weight: 400;
+			line-height: 24px;
+			margin-right: 0;
+		}
+	}
+	.description__contact {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+	}
+	.description__contact__paragraf {
+		
+	margin-top: 80px;
+	border-bottom: 3px solid $green;
+	padding-bottom: 10px;
+	
+	&:last-child {
+		margin-left: 0px;
+	}
+		
+		
+		button {
+			border: 0;
+			background: none;
+			text-decoration: none;
+			color: $white;
+			font-size: 16px;
+			letter-spacing: 2px;
+			transition: color 0.3s;
+			
+			
+			cursor: pointer;
+			&:hover {
+				color: $green;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+				transition: 0.3s;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+	
+	
 }

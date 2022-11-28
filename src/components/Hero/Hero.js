@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 //style
 import './Hero.scss'
 import me from '../../assets/images/me.jpg'
+import memob from '../../assets/images/me_mob.png'
 //translation
 import { useTranslation } from 'react-i18next'
 
@@ -14,7 +15,8 @@ const Hero = (props) => {
 	return (
 		<>
 			<div className="photo-box">
-				<img src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
+				<img className='web-img' src={me} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
+				<img className='mob-img' src={memob} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
 			<div className="hero-box">
 				<h2>{t('header.1')}</h2>

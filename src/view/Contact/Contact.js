@@ -17,7 +17,7 @@ const Contact = () => {
 	const goToHome = () => {
 		navigate('/')
 	}
-const notifySend = () =>
+	const notifySend = () =>
 		toast.success('Wysłane!', {
 			theme: 'light',
 			position: toast.POSITION.TOP_CENTER,
@@ -26,14 +26,16 @@ const notifySend = () =>
 			pauseOnFocusLoss: false,
 		})
 
-
-
-const {register, reset,  handleSubmit, formState: {errors}} = useForm({
-	resolver: yupResolver(userSchema),
-})
+	const {
+		register,
+		reset,
+		handleSubmit,
+		formState: { errors },
+	} = useForm({
+		resolver: yupResolver(userSchema),
+	})
 
 	const sendEmail = () => {
-		
 		emailjs.sendForm('service_xyxbpt9', 'template_hprltkm', form.current, 'FhcVn6Mg6nE0z72o-').then(
 			result => {
 				console.log(result.text)
@@ -42,15 +44,11 @@ const {register, reset,  handleSubmit, formState: {errors}} = useForm({
 				console.log(error.text)
 			}
 		)
-		
+
 		notifySend()
 		reset()
-	
 	}
 
-	
-	
-	
 	return (
 		<>
 			<ToastContainer />
@@ -63,25 +61,39 @@ const {register, reset,  handleSubmit, formState: {errors}} = useForm({
 					<div className="cell-form">
 						<div className="text-content">
 							<h1>Contact</h1>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio consectetur reprehenderit
-								blanditiis consequatur ut doloribus sequi voluptatibus, voluptatum quod.
-							</p>
+							<p>Please fill in the form, and I'll get back to you as soon as possible.</p>
 						</div>
 					</div>
 					<div className="cell-form">
 						<form ref={form} onSubmit={handleSubmit(sendEmail)}>
-							
-							<input className={errors.name ? 'error_input' : 'normal_input'} type="text" name="name" placeholder="NAME" {...register('name')}  />
-							{errors.name ? <p className='error_info'>{errors.name.message}</p> : '' }
+							<input
+								className={errors.name ? 'error_input' : 'normal_input'}
+								type="text"
+								name="name"
+								placeholder="NAME"
+								{...register('name')}
+							/>
+							{errors.name ? <p className="error_info">{errors.name.message}</p> : ''}
 
-							<input className={errors.email ? 'error_input' : 'normal_input'} type="email" name="email" placeholder="EMAIL" {...register('email')}/>
-							{errors.email ? <p className='error_info'>{errors.email.message}</p> : '' }
+							<input
+								className={errors.email ? 'error_input' : 'normal_input'}
+								type="email"
+								name="email"
+								placeholder="EMAIL"
+								{...register('email')}
+							/>
+							{errors.email ? <p className="error_info">{errors.email.message}</p> : ''}
 
-							<textarea className={errors.message? 'error_textarea' : 'normal_textarea'} name="message" placeholder="MESSAGE" rows={5} {...register('message')}/>
-							{errors.message ? <p className='error_info_text'>{errors.message.message}</p> : '' }
-							
-							<button className="submit" type="submit" value="Send"  >
+							<textarea
+								className={errors.message ? 'error_textarea' : 'normal_textarea'}
+								name="message"
+								placeholder="MESSAGE"
+								rows={5}
+								{...register('message')}
+							/>
+							{errors.message ? <p className="error_info_text">{errors.message.message}</p> : ''}
+
+							<button className="submit" type="submit" value="Send">
 								SEND MESSAGE
 							</button>
 						</form>

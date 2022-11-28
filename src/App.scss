@@ -6,8 +6,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-
 body {
 	background-image: linear-gradient(to right bottom, #000000, #0f0c0f, #16151a, #191d24, #1a262c);
     height: 100%;
@@ -16,12 +14,12 @@ body {
 	color: $white;
 	margin: 3rem 10rem;
 	
+	
 }
 
-.footer {
-	margin-top: 40px;
-	border-top: 1px solid white;
-	padding-top: 30px;
-	position: relative;
-	bottom: 0;
+@media all and (max-width: 500px), (max-height: 500) {
+	body {
+		margin: 2rem 2rem;
+		height: auto;
+	}
 }

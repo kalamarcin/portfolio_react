@@ -10,7 +10,6 @@ import project2 from '../../assets/images/thumbnail-project-2-large.webp'
 import project3 from '../../assets/images/thumbnail-project-3-large.webp'
 import project4 from '../../assets/images/thumbnail-project-4-large.webp'
 
-
 const Project = () => {
 	const { t } = useTranslation()
 	const control = useAnimation()
@@ -18,7 +17,7 @@ const Project = () => {
 	const [ref, inView] = useInView()
 	const [ref1, inView1] = useInView()
 
-	const boxVariant = {
+	let boxVariant = {
 		visible: {
 			y: -10,
 			opacity: 1,
@@ -28,6 +27,19 @@ const Project = () => {
 			y: 100,
 			opacity: 0,
 		},
+	}
+	const isMobile = window.innerWidth || window.innerHeight < 500
+	if (isMobile) {
+		boxVariant = {
+			visible: {
+				y: -10,
+				opacity: 1,
+			},
+			hidden: {
+				y: -10,
+				opacity: 1,
+			},
+		}
 	}
 
 	useEffect(() => {
@@ -50,7 +62,6 @@ const Project = () => {
 		<div className="project-wrapper">
 			<h2>{t('project')}</h2>
 			<div className="project-grid">
-				
 				<motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className="cell">
 					<div className="middle">
 						<img src={project1} alt="" />

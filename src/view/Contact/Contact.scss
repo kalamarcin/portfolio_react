@@ -1,7 +1,9 @@
 @import '../../helpers/tokens';
 
 .body-section {
+	
 	.btn-home {
+		
 		margin-top: 150px;
 		padding-right: 25px;
 		display: flex;
@@ -25,6 +27,7 @@
 	}
 
 	.form-section-grid {
+		
 		margin-top: 80px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -37,6 +40,16 @@
 			min-width: 150px;
 			.text-content {
 				margin: 80px;
+				h1 {
+					font-size:48px ;
+					font-weight: 700;
+					margin-bottom: 30px;
+				}
+				p {
+					font-size: 18px;
+					color: $light-grey;
+					line-height: 28px;
+				}
 			}
 
 			form {
