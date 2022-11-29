@@ -1,9 +1,7 @@
 @import '../../helpers/tokens';
 
 .body-section {
-	
 	.btn-home {
-		
 		margin-top: 150px;
 		padding-right: 25px;
 		display: flex;
@@ -27,7 +25,6 @@
 	}
 
 	.form-section-grid {
-		
 		margin-top: 80px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -41,7 +38,7 @@
 			.text-content {
 				margin: 80px;
 				h1 {
-					font-size:48px ;
+					font-size: 48px;
 					font-weight: 700;
 					margin-bottom: 30px;
 				}
@@ -132,8 +129,8 @@
 		.submit {
 			margin-top: 50px;
 			display: flex;
-			width: 100%;
-			padding-top: 20px;
+			
+			padding: 20px 0 15px 0;
 			display: flex;
 			background: none;
 			border: none;
@@ -141,7 +138,8 @@
 			justify-content: flex-end;
 			align-self: flex-end;
 			font-size: 16px;
-			letter-spacing: 2.28571px;
+			letter-spacing: 3px;
+			border-bottom: solid 2px $green;
 			cursor: pointer;
 			transition: 0.3s;
 			&:hover {
@@ -149,4 +147,138 @@
 			}
 		}
 	}
+}
+
+@media all and (max-width: 1000px) {
+	.body-section {
+		.btn-home {
+			margin-top: 50px;
+			padding-right: 25px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			justify-content: flex-end;
+			height: 50px;
+			color: white;
+			background: none;
+			border: 0;
+			text-decoration: none;
+
+			i {
+				font-size: 3rem;
+				cursor: pointer;
+				transition: color 0.3s;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+
+		.form-section-grid {
+			margin-top: 50px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr;
+			grid-column-gap: 1rem;
+			background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.2);
+			border-radius: 25px;
+			
+
+			.cell-form {
+				padding: 0 30px 0 30px;
+				
+				.text-content {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					margin: 80px;
+					
+					h1 {
+						font-size: 56px;
+						font-weight: 700;
+						margin-bottom: 30px;
+					}
+					p {
+						font-size: 18px;
+						color: $light-grey;
+						line-height: 28px;
+					}
+				}
+
+				form {
+					margin: 4rem 4rem;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 500px) {
+	.body-section {
+		.btn-home {
+			margin-top: 20px;
+			padding-right: 25px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			justify-content: flex-end;
+			height: 50px;
+			color: white;
+			background: none;
+			border: 0;
+			text-decoration: none;
+
+			i {
+				font-size: 2rem;
+				cursor: pointer;
+				transition: color 0.3s;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+
+		.form-section-grid {
+			margin-top: 10px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr;
+			grid-column-gap: 1rem;
+			background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.2);
+			border-radius: 25px;
+			
+
+			.cell-form {
+				padding: 0 30px 0 30px;
+				
+				.text-content {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					margin: 20px;
+					
+					h1 {
+						font-size: 42px;
+						font-weight: 700;
+						margin-bottom: 20px;
+					}
+					p {
+						font-size: 14px;
+						color: $light-grey;
+						line-height: 22px;
+					}
+				}
+
+				form {
+					margin: 2rem 0rem;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+
+
 }

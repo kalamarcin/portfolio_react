@@ -16,6 +16,7 @@ const [isActive, setIsActive] = useState(true)
     const { i18n } = useTranslation();
     
     const handleClickLang = (lang) => {
+        document.documentElement.setAttribute("lang", lang);
         i18n.changeLanguage(lang);
         if (lang === "pl") {
             setIsActive(false)
