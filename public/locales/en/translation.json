@@ -1,11 +1,11 @@
 {
     "header": {
-        "1": "Nice to meet you!",
-        "2": "I'm"
+        "1": "Frontend Developer",
+        "2": "Hello, I'm"
     },
 
     "description": {
-        "1": "For many years I was working as a freelance graphic designer, creating visual identification and DPT. From an early age, I created simple HTML and CSS websites. I am currently studying at the Software Development Academy. The program of the course is HTML, CSS (and SASS), JavaScript and React. During the course I got acquainted with the scrum methodology, I used GIT and I had the opportunity to learn the best programming practices. I love learning new things and getting to know new concepts. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team."
+        "1": "From the day I wrote my first line of code I knew I was hooked. My passion for programming lead me to master problem solving, ability to learn quickly and always stay on top od new technologies. I am looking for the right opportunity to develop my career. Below you find showcase my skills in frondend development."
     },
     "buttons": {
         "contact" : "CONTACT ME",

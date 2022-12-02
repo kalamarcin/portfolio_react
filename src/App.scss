@@ -28,3 +28,22 @@ body {
 		height: auto;
 	}
 }
+
+::-webkit-scrollbar {
+	background: none;
+	width: 10px;
+	
+  }
+   
+ ::-webkit-scrollbar-thumb {
+	
+	background: #42b27f;
+	
+	
+	border-radius: 20px;
+  }
+  
+ ::-webkit-scrollbar-track {
+	background: rgb(62, 62, 62);
+	border-radius: 20px;
+  }

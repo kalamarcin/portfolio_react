@@ -9,9 +9,7 @@ import project1 from '../../assets/images/project1.png'
 import project2 from '../../assets/images/project2.png'
 import project3 from '../../assets/images/project3.jpg'
 
-
 const Project = () => {
-	
 	const { t } = useTranslation()
 	const control = useAnimation()
 	const control1 = useAnimation()
@@ -104,11 +102,19 @@ const Project = () => {
 						<img src={project3} alt="" />
 						<div className="fragment">
 							<div className="text">
-								<a href="/" className="text__p">
-								VIEW PROJECT
+								<a
+									href="https://devfinder-mk.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text__p">
+									VIEW PROJECT
 								</a>
-								<a href="/" className="text__p">
-								VIEW CODE
+								<a
+									href="https://github.com/kalamarcin/github-user-search"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text__p">
+									VIEW CODE
 								</a>
 							</div>
 						</div>
@@ -116,11 +122,19 @@ const Project = () => {
 					<h3 className="cell__h3">GITHUB USER SEARCH APP</h3>
 					<p className="cell__p">HTML SCSS JAVASCRIPT REACT API</p>
 					<div className="hidden-box">
-						<a href="/" className="hidden-txt">
-						VIEW PROJECT
+						<a
+							href="https://devfinder-mk.netlify.app/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hidden-txt">
+							VIEW PROJECT
 						</a>
-						<a href="/" className="hidden-txt">
-						VIEW CODE
+						<a
+							href="https://github.com/kalamarcin/github-user-search"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hidden-txt">
+							VIEW CODE
 						</a>
 					</div>
 				</motion.div>
@@ -157,7 +171,11 @@ const Project = () => {
 							className="hidden-txt">
 							VIEW PROJECT
 						</a>
-						<a href="https://github.com/kalamarcin/PickaShop" className="hidden-txt">
+						<a
+							href="https://github.com/kalamarcin/PickaShop"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hidden-txt">
 							VIEW CODE
 						</a>
 					</div>

@@ -5,7 +5,9 @@
 	font-size: 48px;
 	margin-top: 90px;
 	padding-bottom: 5%;
-	
+	h2 {
+		font-size: 48px;
+	}
 	span {
 		border-bottom: 5px solid $green;
 	}
@@ -18,7 +20,7 @@
 	top: 0;
 	z-index: -1;
 	.web-img {
-		height: 800px;
+		height: 700px;
 	}
 	.mob-img {
 		display: none;

@@ -31,9 +31,11 @@ const Hero = props => {
 				<img className="mob-img" src={memob} alt="osoba w czapce i okularach przeciwsponecznych na czarno-biało" />
 			</div>
 			<div className="hero-box">
-				<h2>{t('header.1')}</h2>
 				<h2>
-					{t('header.2')} <span>{props.name}</span>.
+					{t('header.2')} {props.name}.
+				</h2>
+				<h2>
+					<span> {t('header.1')}</span>
 				</h2>
 				<div className="description">
 					<p className="description__p">{t('description.1')}</p>
