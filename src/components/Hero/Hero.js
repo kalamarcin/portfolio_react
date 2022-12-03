@@ -35,7 +35,7 @@ const Hero = props => {
 					{t('header.2')} {props.name}.
 				</h2>
 				<h2>
-					<span> {t('header.1')}</span>
+					 <span>{t('header.1')}</span>
 				</h2>
 				<div className="description">
 					<p className="description__p">{t('description.1')}</p>
