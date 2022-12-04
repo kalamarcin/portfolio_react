@@ -1,4 +1,4 @@
-![](https://https://github.com/kalamarcin/portfolio_react/blob/master/src/assets/images/portfolio.png)
+![](src/assets/images/portfolio.png)
 
 ## Overview
 
