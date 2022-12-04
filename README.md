@@ -1,19 +1,4 @@
-# Single-page developer portfolio
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
- 
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-
+![](https://https://github.com/kalamarcin/portfolio_react/blob/master/src/assets/images/portfolio.png?raw=true)
 
 ## Overview
 
@@ -26,13 +11,11 @@ Users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-
+- Send email via emailjs service
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Portfolio](https://portfolio-mk-react.netlify.app/)
 
 ## My process
 
@@ -42,10 +25,21 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- [EmailJS](https://www.emailjs.com/)
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
+## Setup
+
+To run this project, clone it and install it locally using npm:
+
+```
+$ git clone git@github.com:kalamarcin/portfolio_react.git
+$ cd portfolio_react
+$ npm install
+
+$ npm start
+
+```
 
 ## Author
 
