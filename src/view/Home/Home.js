@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../../components/Hero/Hero'
 import Skills from '../../components/Skills/Skills'
-import Project from '../../components/Project/Project'
+import Project from '../../components/Projects/Projects'
 import { useTranslation } from 'react-i18next'
 
 const Home = () => {
