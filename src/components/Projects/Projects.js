@@ -13,6 +13,7 @@ import planets from '../../assets/images/planets.jpg'
 import Portfolio from './Portfolio/Portfolio'
 import Github from './Github/Github'
 import PickaShop from './PickaShop/PickaShop'
+import Planets from './Planets/Planets'
 
 const Project = () => {
   const { t } = useTranslation()
@@ -77,7 +78,7 @@ const Project = () => {
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
-          <PickaShop name="PLANETS FACT SITE (site under construction)" tech="HTML CSS JAVASCRIPT" imgSrc={planets} />
+          <Planets name="PLANETS FACT SITE (site under construction)" tech="HTML CSS JAVASCRIPT" imgSrc={planets} />
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
