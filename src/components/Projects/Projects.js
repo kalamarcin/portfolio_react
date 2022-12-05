@@ -77,7 +77,7 @@ const Project = () => {
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
-          <PickaShop name="PLANETS FACT SITE" tech="HTML CSS JAVASCRIPT" imgSrc={planets} />
+          <PickaShop name="PLANETS FACT SITE (site under construction)" tech="HTML CSS JAVASCRIPT" imgSrc={planets} />
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
