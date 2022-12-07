@@ -25,6 +25,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- [useTranslation (hook)](https://react.i18next.com/latest/usetranslation-hook)
 - [EmailJS](https://www.emailjs.com/)
 - [React](https://reactjs.org/) - JS library
 

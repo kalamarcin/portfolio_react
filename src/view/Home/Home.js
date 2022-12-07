@@ -42,7 +42,7 @@ const Home = () => {
 
 	return (
 		<>
-			<Hero name="Marcin" />
+			<Hero />
 			<Skills skills={skillsList} />
 			<Project />
 		</>
