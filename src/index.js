@@ -6,13 +6,13 @@ import { BrowserRouter } from 'react-router-dom';
 import './i18next'
 import GlobalStore from './components/Store/GlobalStore';
 import './index.scss'
-
+import Loading from './components/Loading/Loading';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStore>
-    <Suspense fallback={(<div>Loading ~~~</div>)}>
+    <Suspense fallback={<Loading/>}>
     <BrowserRouter>
     <App />
     </BrowserRouter>
