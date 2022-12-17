@@ -8,14 +8,14 @@ const PickaShop = props => {
         <div className="fragment">
           <div className="text">
             <a
-              href="https://kalamarcin.github.io/PickaShop"
+              href="https://advice-generator-mk.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text__p">
               VIEW PROJECT
             </a>
             <a
-              href="https://github.com/kalamarcin/PickaShop"
+              href="https://github.com/kalamarcin/advice-generator"
               target="_blank"
               rel="noopener noreferrer"
               className="text__p">
@@ -28,14 +28,14 @@ const PickaShop = props => {
       <p className="cell__p">{props.tech}</p>
       <div className="hidden-box">
         <a
-          href="https://kalamarcin.github.io/PickaShop"
+          href="https://advice-generator-mk.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden-txt">
           VIEW PROJECT
         </a>
         <a
-          href="https://github.com/kalamarcin/PickaShop"
+          href="https://github.com/kalamarcin/advice-generator"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden-txt">

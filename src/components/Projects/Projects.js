@@ -7,12 +7,12 @@ import './Projects.scss'
 // img
 import portfolio from '../../assets/images/portfolio.png'
 import githubsearch from '../../assets/images/githubsearch.jpg'
-import pickashop from '../../assets/images/pickashop.png'
 import planets from '../../assets/images/planets.jpg'
+import generator from '../../assets/images/generator.jpg'
 // components
 import Portfolio from './Portfolio/Portfolio'
 import Github from './Github/Github'
-import PickaShop from './PickaShop/PickaShop'
+import Generator from './Generator/Generator'
 import Planets from './Planets/Planets'
 
 const Project = () => {
@@ -21,6 +21,7 @@ const Project = () => {
   const control1 = useAnimation()
   const [ref, inView] = useInView()
   const [ref1, inView1] = useInView()
+
 
   let boxVariant = {
     visible: {
@@ -64,6 +65,13 @@ const Project = () => {
       control1.start('hidden')
     }
   }, [control1, inView1])
+  useEffect(() => {
+    if (inView1) {
+      control1.start('visible')
+    } else {
+      control1.start('hidden')
+    }
+  }, [control1, inView1])
 
   return (
     <div className="project-wrapper">
@@ -82,7 +90,7 @@ const Project = () => {
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
-          <PickaShop name="ORDER FORM WITH VALIDATION" tech="HTML CSS JAVASCRIPT" imgSrc={pickashop} />
+          <Generator name="ADVICE GENERATOR" tech="HTML SCSS JAVASCRIPT REACT API" imgSrc={generator} />
         </motion.div>
       </div>
     </div>
