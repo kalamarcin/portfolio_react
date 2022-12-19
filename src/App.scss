@@ -1,49 +1,44 @@
 @import './helpers/_tokens.scss';
 
 * {
-	font-family: 'Space Grotesk';
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  font-family: 'Space Grotesk';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	background-image: linear-gradient(to right bottom, #000000, #0f0c0f, #16151a, #191d24, #1a262c);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	color: $white;
-	margin: 3rem 10rem;
-	
-	
+  background-image: linear-gradient(to right bottom, #000000, #0f0c0f, #16151a, #191d24, #1a262c);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $white;
+  margin: 3rem 10rem;
 }
 @media all and (max-width: 1000px) {
-	body {
-		margin: 2rem 2rem;
-		height: auto;
-	}
+  body {
+    margin: 2rem 2rem;
+    height: auto;
+  }
 }
 @media all and (max-width: 600px), (max-height: 500px) {
-	body {
-		margin: 2rem 2rem;
-		height: auto;
-	}
+  body {
+    margin: 2rem 2rem;
+    height: auto;
+  }
 }
 
 ::-webkit-scrollbar {
-	background: black;
-	width: 10px;
-	
-  }
-   
- ::-webkit-scrollbar-thumb {
-	
-	background: #42b27f;
-	
-	
-	border-radius: 20px;
-  }
-  
- ::-webkit-scrollbar-track {
-	background: rgb(62, 62, 62);
-	border-radius: 20px;
-  }
+  background: black;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #42b27f;
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(62, 62, 62);
+  border-radius: 20px;
+}

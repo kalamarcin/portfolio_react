@@ -9,19 +9,22 @@ import portfolio from '../../assets/images/portfolio.png'
 import githubsearch from '../../assets/images/githubsearch.jpg'
 import planets from '../../assets/images/planets.jpg'
 import generator from '../../assets/images/generator.jpg'
+import tracker from '../../assets/images/ip-tracker.jpg'
 // components
 import Portfolio from './Portfolio/Portfolio'
 import Github from './Github/Github'
 import Generator from './Generator/Generator'
 import Planets from './Planets/Planets'
+import Tracker from './Tracker/Tracker'
 
 const Project = () => {
   const { t } = useTranslation()
   const control = useAnimation()
   const control1 = useAnimation()
+  const control2 = useAnimation()
   const [ref, inView] = useInView()
   const [ref1, inView1] = useInView()
-
+  const [ref2, inView2] = useInView()
 
   let boxVariant = {
     visible: {
@@ -65,13 +68,14 @@ const Project = () => {
       control1.start('hidden')
     }
   }, [control1, inView1])
+
   useEffect(() => {
-    if (inView1) {
-      control1.start('visible')
+    if (inView2) {
+      control2.start('visible')
     } else {
-      control1.start('hidden')
+      control2.start('hidden')
     }
-  }, [control1, inView1])
+  }, [control2, inView2])
 
   return (
     <div className="project-wrapper">
@@ -90,6 +94,10 @@ const Project = () => {
         </motion.div>
 
         <motion.div ref={ref1} variants={boxVariant} initial="hidden" animate={control1} className="cell">
+          <Tracker name="IP ADDRESS TRACKER" tech="HTML SCSS JAVASCRIPT REACT API" imgSrc={tracker} />
+        </motion.div>
+
+        <motion.div ref={ref2} variants={boxVariant} initial="hidden" animate={control2} className="cell">
           <Generator name="ADVICE GENERATOR" tech="HTML SCSS JAVASCRIPT REACT API" imgSrc={generator} />
         </motion.div>
       </div>
