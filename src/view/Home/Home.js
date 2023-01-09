@@ -11,6 +11,7 @@ import sass from '../../assets/logo/sass.png'
 import git from '../../assets/logo/Git-Icon-White.png'
 
 const Home = () => {
+  
   const { t } = useTranslation()
 
   const skillsList = [
